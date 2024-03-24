@@ -104,7 +104,9 @@ console.log(result); // Output: NaN
 // Its value depends on how and where a function is called.
 
 //Clouser in js
-// In JavaScript, a closure is a combination of a function and the lexical environment within which that function was declared. Closures allow functions to retain access to variables from their containing scope even
+// In JavaScript, a closure is a combination of a function and 
+// the lexical environment within which that function was declared.Closures 
+// allow functions to retain access to variables from their containing scope even
 //  after the parent function has finished executing.
 
 // Example
