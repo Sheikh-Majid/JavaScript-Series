@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body style="background-color: gray;">
+    <h1>Let Learn SetInterval</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+  <script>
+     
+
+     let mera10;
+    const mera1 = function(str){
+        console.log("Shaikh");
+    }
+
+    const btn1 = document.querySelector("#start")
+    const btn2 = document.querySelector("#stop")
+
+    //  const mera10 = setInterval(mera1, 1000, "Hello");
+
+    btn1.addEventListener("click", function(str){
+    mera10 = setInterval(mera1, 1000 , "Hello");
+        
+         console.log("clicked to start")
+    })
+
+
+    btn2.addEventListener("click", function(){
+        console.log("clicked to stop");
+        clearInterval(mera10);
+    })
+
+
+    //const mera2 = setInterval(mera1 , 3000 , "Hello");
+
+  </script>
+</html>

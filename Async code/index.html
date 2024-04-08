@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Code</title>
+</head>
+<body style="background-color: gray;">
+     <h1>Let's Learn something new </h1>
+     <button id="stop" style="cursor: pointer;">Stop</button>
+</body>
+<script>
+    console.log("start")
+
+    const mera = function(){
+        console.log("mera")
+    }
+        setTimeout(mera , 1000)
+        console.log("end")
+
+        const changeText = function(){
+            const element = document.querySelector("h1")
+            element.innerHTML = "Revision for javascript"
+        }
+
+       const changeme =  setTimeout(changeText , 3000)
+
+        // setTimeout = "kuch particular time pe kuch show karan ho to"
+        // setInteral = "kuch specific time pr function ko bar bar  run karana ho "
+        // clearTimeout = "kisi setTimeout ko remove karna ho to"
+        // example of clearTimeout
+
+        const button = document.querySelector("#stop")
+        button.addEventListener("click" , ()=>{
+             clearTimeout(changeme)
+             console.log("stoped")
+        })
+
+</script>
+</html>
